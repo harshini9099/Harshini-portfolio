@@ -1,12 +1,12 @@
 :root {
-  --bg: #1a1015;
-  --bg-alt: #201319;
-  --card: #241620;
-  --border: #33222c;
-  --text: #f0e6ea;
-  --muted: #a99aa0;
-  --accent: #e8a0c4;
-  --accent-2: #c9a3ff;
+  --bg: #020817;
+  --bg-alt: #05101f;
+  --card: #0d111f;
+  --border: #1e293b;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --accent: #3b82f6;
+  --accent-2: #6366f1;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -241,9 +241,12 @@ h2 { font-size: 2.2rem; margin-bottom: 12px; }
 .hero-name {
   font-size: 3.2rem;
   font-weight: 900;
-  color: var(--accent);
+  color: var(--text);
   line-height: 1.05;
   letter-spacing: 1px;
+}
+.hero-name-accent {
+  color: var(--accent);
 }
 .hero-role {
   color: var(--muted);
@@ -271,12 +274,12 @@ h2 { font-size: 2.2rem; margin-bottom: 12px; }
   transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
   display: inline-block;
 }
-.btn-primary { background: var(--accent); color: #3d1f2c; }
+.btn-primary { background: var(--accent); color: #f8fafc; }
 .btn-outline { background: transparent; color: var(--text); }
 .btn:hover {
   filter: brightness(1.1);
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(232, 160, 196, 0.25);
+  box-shadow: 0 10px 24px rgba(59, 130, 246, 0.25);
 }
 .btn:active { transform: translateY(-1px); }
 .scroll-down { font-size: 1.5rem; color: var(--muted); animation: bounce 1.6s infinite; }
@@ -312,7 +315,7 @@ section { padding: 90px 24px; max-width: 1100px; margin: 0 auto; }
 .stat-card:hover {
   transform: translateY(-6px);
   border-color: var(--accent);
-  box-shadow: 0 14px 30px rgba(232, 160, 196, 0.15);
+  box-shadow: 0 14px 30px rgba(59, 130, 246, 0.15);
 }
 .stat-card h3 { color: var(--accent); font-size: 2rem; transition: transform 0.3s ease; }
 .stat-card:hover h3 { transform: scale(1.1); }
@@ -334,12 +337,12 @@ section { padding: 90px 24px; max-width: 1100px; margin: 0 auto; }
 .skill-card:hover {
   transform: translateY(-6px);
   border-color: var(--accent);
-  box-shadow: 0 14px 30px rgba(232, 160, 196, 0.15);
+  box-shadow: 0 14px 30px rgba(59, 130, 246, 0.15);
 }
 .skill-head { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
 .badge {
   width: 32px; height: 32px;
-  background: rgba(232,160,196,0.15);
+  background: rgba(59,130,246,0.15);
   color: var(--accent);
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
@@ -360,7 +363,7 @@ section { padding: 90px 24px; max-width: 1100px; margin: 0 auto; }
 }
 .tags span:hover {
   background: var(--accent);
-  color: #3d1f2c;
+  color: #f8fafc;
   border-color: var(--accent);
   transform: translateY(-2px);
 }
@@ -377,11 +380,11 @@ section { padding: 90px 24px; max-width: 1100px; margin: 0 auto; }
 }
 .timeline-item:hover {
   transform: translateX(6px);
-  box-shadow: 0 14px 30px rgba(232, 160, 196, 0.12);
+  box-shadow: 0 14px 30px rgba(59, 130, 246, 0.12);
 }
 .tag-pill {
   display: inline-block;
-  background: rgba(232,160,196,0.12);
+  background: rgba(59,130,246,0.12);
   color: var(--accent);
   font-size: 0.75rem;
   padding: 4px 12px;
@@ -423,7 +426,7 @@ section { padding: 90px 24px; max-width: 1100px; margin: 0 auto; }
 }
 .project-card:hover {
   border-color: var(--accent);
-  box-shadow: 0 18px 34px rgba(232, 160, 196, 0.18);
+  box-shadow: 0 18px 34px rgba(59, 130, 246, 0.18);
 }
 .project-card h3 { margin: 12px 0 8px; font-size: 1.3rem; }
 .project-card p { color: var(--muted); font-size: 0.92rem; line-height: 1.6; }
@@ -465,12 +468,12 @@ section { padding: 90px 24px; max-width: 1100px; margin: 0 auto; }
 .poster-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
 .poster-card p { font-size: 0.85rem; line-height: 1.5; color: rgba(245,249,255,0.85); }
 
-.poster-1 { background: linear-gradient(145deg, #e8a0c4, #7a3d5c); }
-.poster-2 { background: linear-gradient(145deg, #c9a3ff, #4f3480); }
-.poster-3 { background: linear-gradient(145deg, #d98fae, #6b2f47); }
-.poster-4 { background: linear-gradient(145deg, #e0b088, #8a5433); }
-.poster-5 { background: linear-gradient(145deg, #b48ee0, #4a3170); }
-.poster-6 { background: linear-gradient(145deg, #e0a6c8, #6e3352); }
+.poster-1 { background: linear-gradient(145deg, #3b82f6, #1e3a8a); }
+.poster-2 { background: linear-gradient(145deg, #6366f1, #312e81); }
+.poster-3 { background: linear-gradient(145deg, #0ea5e9, #075985); }
+.poster-4 { background: linear-gradient(145deg, #60a5fa, #1d4ed8); }
+.poster-5 { background: linear-gradient(145deg, #818cf8, #3730a3); }
+.poster-6 { background: linear-gradient(145deg, #38bdf8, #0369a1); }
 
 .poster-arrow {
   flex-shrink: 0;
@@ -538,11 +541,11 @@ section { padding: 90px 24px; max-width: 1100px; margin: 0 auto; }
 .now-card:hover {
   transform: translateY(-6px);
   border-color: var(--accent);
-  box-shadow: 0 14px 30px rgba(232, 160, 196, 0.15);
+  box-shadow: 0 14px 30px rgba(59, 130, 246, 0.15);
 }
 .now-card .icon {
   width: 40px; height: 40px;
-  background: rgba(232,160,196,0.12);
+  background: rgba(59,130,246,0.12);
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 12px;
@@ -573,12 +576,12 @@ section { padding: 90px 24px; max-width: 1100px; margin: 0 auto; }
 .education-card:hover {
   transform: translateY(-6px);
   border-color: var(--accent);
-  box-shadow: 0 14px 30px rgba(232, 160, 196, 0.15);
+  box-shadow: 0 14px 30px rgba(59, 130, 246, 0.15);
 }
 .education-card .icon {
   width: 44px; height: 44px;
   flex-shrink: 0;
-  background: rgba(232,160,196,0.12);
+  background: rgba(59,130,246,0.12);
   border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
   font-size: 1.3rem;
@@ -609,7 +612,7 @@ section { padding: 90px 24px; max-width: 1100px; margin: 0 auto; }
 .contact-card .icon {
   width: 40px; height: 40px;
   flex-shrink: 0;
-  background: rgba(232,160,196,0.12);
+  background: rgba(59,130,246,0.12);
   color: var(--accent);
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
@@ -625,7 +628,7 @@ section { padding: 90px 24px; max-width: 1100px; margin: 0 auto; }
 .contact-card:hover {
   border-color: var(--accent);
   transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(232, 160, 196, 0.15);
+  box-shadow: 0 14px 30px rgba(59, 130, 246, 0.15);
 }
 .contact-card:hover .arrow { transform: translate(4px, -4px); color: var(--accent); }
 .location-pill {
