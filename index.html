@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Harshini Reddy Pullannagari | SDET / QA Automation Engineer</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshini Reddy Pullannagari | SDET / QA Automation Engineer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -26,18 +26,33 @@
     <a href="#skills">Tech Stack</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <p class="eyebrow">HI, I'M</p>
-  <h1 class="hero-name">HARSHINI<br />REDDY</h1>
-  <p class="hero-role">Software Development Engineer in Test (SDET)</p>
-  <div class="hero-buttons">
-    <a href="#projects" class="btn btn-primary">View Projects</a>
-    <a href="#contact" class="btn btn-outline">Let's Connect</a>
+  <div class="hero-inner">
+    <div class="hero-photo">
+      <div class="hero-photo-ring"></div>
+      <img
+              src="profile.jpg"
+              alt="Harshini Reddy Pullannagari"
+              id="heroPhotoImg"
+              onerror="this.style.display='none'; document.getElementById('heroPhotoFallback').style.display='flex';"
+      />
+      <div class="hero-photo-fallback" id="heroPhotoFallback">HR</div>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow reveal">HI, I'M</p>
+      <h1 class="hero-name reveal">HARSHINI<br />REDDY</h1>
+      <p class="hero-role reveal">Software Development Engineer in Test (SDET)</p>
+      <div class="hero-buttons reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+      </div>
+    </div>
   </div>
   <a href="#about" class="scroll-down" aria-label="Scroll down">&#8964;</a>
 </section>
@@ -45,30 +60,30 @@
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="about-grid">
-    <div class="about-text">
+    <div class="about-text reveal">
       <p class="eyebrow">ABOUT ME</p>
       <h2>Engineering <span class="accent">Quality</span> at Scale</h2>
       <p class="about-desc">
-        SDET / QA Automation Engineer with 5+ years of experience across Healthcare, Medical Devices,
-        Banking, and Telecommunications. I design scalable automation frameworks with Selenium, Playwright,
-        Appium, and Cucumber BDD, and build data pipelines with PySpark and Databricks for large-scale
-        telemetry analysis and reporting.
+        SDET / QA Automation Engineer with 6+ years of experience in Manual and Automation Testing across Healthcare,
+        Medical Devices, Banking, and Telecommunications. I design scalable automation frameworks with Selenium,
+        Playwright, Appium, and Cucumber BDD, validate REST/SOAP APIs and microservices, and build data pipelines
+        with PySpark and Databricks for large-scale telemetry analysis and reporting.
       </p>
     </div>
     <div class="stats-grid">
-      <div class="stat-card">
-        <h3>5+</h3>
+      <div class="stat-card reveal">
+        <h3>6+</h3>
         <p>Years Experience</p>
       </div>
-      <div class="stat-card">
+      <div class="stat-card reveal">
         <h3>300+</h3>
         <p>Automation Scripts</p>
       </div>
-      <div class="stat-card">
+      <div class="stat-card reveal">
         <h3>90%</h3>
         <p>Automation Coverage</p>
       </div>
-      <div class="stat-card">
+      <div class="stat-card reveal">
         <h3>4</h3>
         <p>Industry Domains</p>
       </div>
@@ -78,46 +93,70 @@
 
 <!-- TECH STACK -->
 <section class="skills" id="skills">
-  <p class="eyebrow center">MY SKILLS</p>
-  <h2 class="center">Tech <span class="accent">Stack</span></h2>
-  <p class="section-sub center">Tools and technologies I use to build reliable test automation and data pipelines</p>
+  <p class="eyebrow center reveal">MY SKILLS</p>
+  <h2 class="center reveal">Tech <span class="accent">Stack</span></h2>
+  <p class="section-sub center reveal">Tools and technologies I use to build reliable test automation and data pipelines</p>
 
   <div class="skills-grid">
-    <div class="skill-card">
+    <div class="skill-card reveal">
       <div class="skill-head"><span class="badge">A</span><h3>Automation & Frameworks</h3></div>
       <div class="tags">
         <span>Selenium WebDriver</span><span>Playwright</span><span>Appium</span>
-        <span>WebDriverIO</span><span>Cucumber BDD</span><span>TestNG</span>
+        <span>WebDriverIO</span><span>Robot Framework</span><span>Cucumber BDD</span>
+        <span>TestNG</span><span>JUnit</span><span>NUnit</span><span>MSTest</span>
       </div>
     </div>
-    <div class="skill-card">
+    <div class="skill-card reveal">
       <div class="skill-head"><span class="badge">L</span><h3>Languages</h3></div>
       <div class="tags">
-        <span>Java</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span>
+        <span>Java</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span><span>JSON</span>
       </div>
     </div>
-    <div class="skill-card">
+    <div class="skill-card reveal">
       <div class="skill-head"><span class="badge">D</span><h3>Data & Analytics</h3></div>
       <div class="tags">
-        <span>PySpark</span><span>Databricks</span><span>Delta Lake</span><span>Pandas</span><span>Power BI</span>
+        <span>PySpark</span><span>Spark SQL</span><span>Databricks</span><span>Delta Lake</span>
+        <span>Pandas</span><span>NumPy</span><span>DuckDB</span><span>Jupyter Notebook</span><span>Power BI</span>
       </div>
     </div>
-    <div class="skill-card">
-      <div class="skill-head"><span class="badge">C</span><h3>API & CI/CD</h3></div>
+    <div class="skill-card reveal">
+      <div class="skill-head"><span class="badge">C</span><h3>API & Backend Testing</h3></div>
       <div class="tags">
-        <span>REST Assured</span><span>Postman</span><span>Jenkins</span><span>GitHub Actions</span><span>Docker</span>
+        <span>REST API Testing</span><span>SOAP API Testing</span><span>REST Assured</span>
+        <span>SOAP UI</span><span>Postman</span><span>ReadyAPI</span><span>OAuth2</span><span>Microservices Testing</span>
       </div>
     </div>
-    <div class="skill-card">
+    <div class="skill-card reveal">
+      <div class="skill-head"><span class="badge">CI</span><h3>CI/CD & DevOps</h3></div>
+      <div class="tags">
+        <span>Git</span><span>GitHub Actions</span><span>Jenkins</span><span>Azure DevOps</span>
+        <span>GitLab CI/CD</span><span>CircleCI</span><span>Docker</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
       <div class="skill-head"><span class="badge">B</span><h3>Databases</h3></div>
       <div class="tags">
-        <span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span><span>Couchbase</span>
+        <span>PostgreSQL</span><span>MySQL</span><span>SQL Server</span><span>MongoDB</span>
+        <span>Couchbase</span><span>NoSQL</span>
       </div>
     </div>
-    <div class="skill-card">
-      <div class="skill-head"><span class="badge">P</span><h3>Performance & Tools</h3></div>
+    <div class="skill-card reveal">
+      <div class="skill-head"><span class="badge">P</span><h3>Performance & Reliability</h3></div>
       <div class="tags">
-        <span>JMeter</span><span>LoadRunner</span><span>JIRA</span><span>HP ALM</span>
+        <span>JMeter</span><span>LoadRunner</span><span>Soak Testing</span><span>Stress Testing</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-head"><span class="badge">T</span><h3>Test Management</h3></div>
+      <div class="tags">
+        <span>JIRA</span><span>HP ALM</span><span>Quality Center</span><span>Polarion</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-head"><span class="badge">M</span><h3>Web, Mobile & Embedded</h3></div>
+      <div class="tags">
+        <span>HTML</span><span>XML</span><span>Android</span><span>iOS</span>
+        <span>React Native</span><span>BLE Testing</span><span>Citrix</span><span>Mobile Debugging</span>
       </div>
     </div>
   </div>
@@ -125,55 +164,68 @@
 
 <!-- EXPERIENCE -->
 <section class="experience" id="experience">
-  <p class="eyebrow center">MY JOURNEY</p>
-  <h2 class="center">Work <span class="accent">Experience</span></h2>
-  <p class="section-sub center">Five+ years building test automation and quality systems across regulated industries</p>
+  <p class="eyebrow center reveal">MY JOURNEY</p>
+  <h2 class="center reveal">Work <span class="accent">Experience</span></h2>
+  <p class="section-sub center reveal">6+ years building test automation and quality systems across regulated industries</p>
 
   <div class="timeline">
-    <div class="timeline-item">
+    <div class="timeline-item reveal">
       <span class="tag-pill">Remote / CA</span>
       <h3>Software Developer Engineer in Test</h3>
       <p class="role-meta">Tandem Diabetes Care &middot; July 2025 &ndash; Present</p>
       <ul>
-        <li>Led soak-test automation for insulin pump and mobile systems via optimized GitHub Actions CI/CD pipelines.</li>
-        <li>Architected reusable CI/CD frameworks with parallel execution and multi-platform (iOS/Android) support.</li>
-        <li>Migrated the Product Log Analysis Testing Tool (PLATT) from Python to PySpark on Databricks.</li>
-        <li>Built a Bronze-Silver-Gold Delta Lake architecture for device telemetry processing.</li>
-        <li>Integrated Power BI dashboards for real-time telemetry visualization and anomaly detection.</li>
+        <li>Led soak-test automation for insulin pump and mobile systems, designing long-duration workflows executed via optimized GitHub Actions CI/CD pipelines to improve execution reliability and system stability.</li>
+        <li>Architected scalable CI/CD frameworks using reusable composite workflows, dynamic artifact management, parallel execution, and multi-platform (iOS/Android) support.</li>
+        <li>Developed Hardware-in-Loop (HIL) automation for embedded medical pump systems, enabling firmware flashing, telemetry validation, and real-device integration testing.</li>
+        <li>Migrated and architected the Product Log Analysis Testing Tool (PLATT) from Python to PySpark and Spark SQL on Databricks for distributed telemetry processing and large-scale analytics.</li>
+        <li>Designed a Bronze&ndash;Silver&ndash;Gold Delta Lake architecture for structured ingestion, transformation, versioning, and high-performance processing of device telemetry data.</li>
+        <li>Built reusable PySpark notebooks compatible with Databricks and local environments using DuckDB-based simulation to improve debugging and development efficiency.</li>
+        <li>Developed the PLATT Runner orchestration framework for managing CI validation, scheduled execution, cloud/local workflows, and automated pipeline monitoring.</li>
+        <li>Integrated Power BI dashboards with telemetry outputs for real-time visualization, anomaly detection, and data-driven insights for engineering teams.</li>
+        <li>Built end-to-end automation and analytics solutions using Playwright (TypeScript/JavaScript) and GitHub Actions CI quality gates to improve regression coverage and defect triage.</li>
       </ul>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item reveal">
       <span class="tag-pill">Remote / CA</span>
       <h3>Automation Engineer</h3>
       <p class="role-meta">Tandem Diabetes Care &middot; March 2025 &ndash; July 2025</p>
       <ul>
-        <li>Designed a TypeScript + Jasmine + WebdriverIO + Appium automation framework using Page Object Model.</li>
-        <li>Built 300+ reusable automation scripts, cutting manual testing effort by 65% in two release cycles.</li>
-        <li>Integrated automation with AWS Device Farm for parallel real-device execution across 7+ languages.</li>
-        <li>Automated REST Assured API regression for telemetry upload, firmware updates, and auth workflows.</li>
+        <li>Onboarded quickly by participating in Agile sprint ceremonies, aligning test scope with FDA-regulated insulin delivery systems and companion iOS/Android applications.</li>
+        <li>Executed manual testing on physical pumps and mobile apps, validating dosing algorithms, BLE connectivity, alerts, firmware behavior, and multi-build compatibility.</li>
+        <li>Designed a TypeScript + Jasmine + WebdriverIO + Appium automation framework in VS Code using Appium Inspector and Page Object Model.</li>
+        <li>Built 300+ reusable automation scripts covering smoke, regression, and negative scenarios, cutting manual testing effort by 65% within two release cycles.</li>
+        <li>Integrated automation with AWS Device Farm for parallel real-device execution, expanded OS/device coverage, and multi-language UI testing across 7+ languages.</li>
+        <li>Automated REST Assured API regression for telemetry upload, firmware updates, and auth workflows, validating backend log generation via mock proxy to catch missing telemetry events before release.</li>
+        <li>Strengthened delivery quality with Git Flow branching, code reviews, JIRA defect lifecycle management, risk-based test planning, traceability matrices, and FDA 21 CFR 820 documentation &mdash; improving framework performance by 30%.</li>
       </ul>
     </div>
 
-    <div class="timeline-item">
-      <span class="tag-pill">Remote</span>
+    <div class="timeline-item reveal">
+      <span class="tag-pill">Remote / MN</span>
       <h3>Quality Assurance Automation Engineer</h3>
       <p class="role-meta">Prime Therapeutics &middot; Aug 2024 &ndash; Feb 2025</p>
       <ul>
-        <li>Built end-to-end automation frameworks for web, mobile, and React Native using Selenium, Appium, Java, TypeScript.</li>
-        <li>Developed Cucumber BDD frameworks integrating UI, API, and database validation.</li>
-        <li>Ran JMeter/LoadRunner performance testing to identify system bottlenecks.</li>
+        <li>Designed and implemented end-to-end automation frameworks for web, mobile, and React Native applications using Selenium, Appium, Java, and TypeScript.</li>
+        <li>Built Cucumber BDD frameworks integrating UI, API (REST Assured), and database validation for full test coverage across application layers.</li>
+        <li>Automated REST API testing covering authentication, request/response validation, and service integration across multiple environments.</li>
+        <li>Performed database validation using PostgreSQL, MongoDB, and Couchbase to ensure data integrity, consistency, and business-rule accuracy.</li>
+        <li>Ran JMeter/LoadRunner performance, load, and stress testing to identify system bottlenecks and improve scalability.</li>
+        <li>Integrated automation suites into Jenkins, GitLab CI/CD, and CircleCI for continuous testing and deployment, while mentoring junior QA engineers.</li>
       </ul>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item reveal">
       <span class="tag-pill">India</span>
       <h3>Quality Engineer</h3>
-      <p class="role-meta">Capgemini &middot; June 2019 &ndash; Dec 2022</p>
+      <p class="role-meta">Capgemini &middot; June 2018 &ndash; Dec 2022</p>
       <ul>
-        <li>Built Selenium/Java/REST Assured automation frameworks for enterprise banking applications.</li>
-        <li>Achieved 90% automation coverage across UI, API, and backend testing modules.</li>
-        <li>Integrated automation into Jenkins, Azure DevOps, and GitHub Actions for continuous testing.</li>
+        <li>Developed automation frameworks using Selenium WebDriver, Java, Python, and REST Assured for enterprise banking applications.</li>
+        <li>Achieved 90% automation coverage across UI, API, and backend testing modules for critical financial systems.</li>
+        <li>Designed and executed functional, regression, integration, smoke, and end-to-end test cases across multiple releases.</li>
+        <li>Performed database validation using PostgreSQL, including stored procedures, triggers, views, and complex SQL queries.</li>
+        <li>Integrated automation suites into Jenkins, Azure DevOps, and GitHub Actions for continuous testing and faster release cycles.</li>
+        <li>Conducted cross-browser and cross-platform testing using Selenium Grid and BrowserStack across cloud testing environments.</li>
       </ul>
     </div>
   </div>
@@ -181,13 +233,13 @@
 
 <!-- PROJECTS -->
 <section class="projects" id="projects">
-  <p class="eyebrow center">MY WORK</p>
-  <h2 class="center">Featured <span class="accent">Projects</span></h2>
-  <p class="section-sub center">A sample of the automation frameworks and data tools I've built</p>
+  <p class="eyebrow center reveal">MY WORK</p>
+  <h2 class="center reveal">Featured <span class="accent">Projects</span></h2>
+  <p class="section-sub center reveal">A sample of the automation frameworks and data tools I've built</p>
 
   <div class="projects-grid">
 
-    <div class="project-card">
+    <div class="project-card reveal tilt-card">
       <div class="tags">
         <span>PySpark</span><span>Databricks</span><span>Delta Lake</span>
       </div>
@@ -200,7 +252,7 @@
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card reveal tilt-card">
       <div class="tags">
         <span>Embedded</span><span>HIL</span><span>Medical Device</span>
       </div>
@@ -213,7 +265,7 @@
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card reveal tilt-card">
       <div class="tags">
         <span>Mobile</span><span>Appium</span><span>POM</span>
       </div>
@@ -226,7 +278,7 @@
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card reveal tilt-card">
       <div class="tags">
         <span>API</span><span>Regression</span><span>Auth</span>
       </div>
@@ -239,7 +291,7 @@
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card reveal tilt-card">
       <div class="tags">
         <span>BDD</span><span>Full Coverage</span>
       </div>
@@ -252,7 +304,7 @@
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card reveal tilt-card">
       <div class="tags">
         <span>Banking</span><span>90% Coverage</span>
       </div>
@@ -268,28 +320,78 @@
   </div>
 </section>
 
+<!-- POSTER WALL SLIDER -->
+<section class="wall" id="wall">
+  <p class="eyebrow center reveal">THE WALL</p>
+  <h2 class="center reveal">Project <span class="accent">Wall</span></h2>
+  <p class="section-sub center reveal">A quick-scroll poster wall of what I've been building</p>
+
+  <div class="poster-slider" id="posterSlider">
+    <button class="poster-arrow poster-prev" id="posterPrev" aria-label="Previous poster">&#8249;</button>
+
+    <div class="poster-viewport">
+      <div class="poster-track" id="posterTrack">
+        <div class="poster-card poster-1">
+          <span class="poster-icon">&#9878;</span>
+          <h3>PLATT</h3>
+          <p>PySpark + Databricks Delta Lake telemetry pipeline</p>
+        </div>
+        <div class="poster-card poster-2">
+          <span class="poster-icon">&#128268;</span>
+          <h3>HIL Automation Suite</h3>
+          <p>Hardware-in-loop testing for insulin pump firmware</p>
+        </div>
+        <div class="poster-card poster-3">
+          <span class="poster-icon">&#128241;</span>
+          <h3>Mobile Automation Framework</h3>
+          <p>Appium + WebdriverIO across iOS &amp; Android</p>
+        </div>
+        <div class="poster-card poster-4">
+          <span class="poster-icon">&#128225;</span>
+          <h3>API Regression Suite</h3>
+          <p>REST Assured coverage for auth &amp; telemetry flows</p>
+        </div>
+        <div class="poster-card poster-5">
+          <span class="poster-icon">&#129513;</span>
+          <h3>Cucumber BDD Framework</h3>
+          <p>UI, API &amp; DB validation in one framework</p>
+        </div>
+        <div class="poster-card poster-6">
+          <span class="poster-icon">&#127974;</span>
+          <h3>Enterprise Banking Automation</h3>
+          <p>90% automation coverage for financial systems</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="poster-arrow poster-next" id="posterNext" aria-label="Next poster">&#8250;</button>
+  </div>
+
+  <div class="poster-dots" id="posterDots"></div>
+</section>
+
 <!-- CURRENTLY WORKING ON -->
 <section class="now">
-  <p class="eyebrow center">WHAT I'M UP TO</p>
-  <h2 class="center">Currently <span class="accent">Working On</span></h2>
+  <p class="eyebrow center reveal">WHAT I'M UP TO</p>
+  <h2 class="center reveal">Currently <span class="accent">Working On</span></h2>
 
   <div class="now-grid">
-    <div class="now-card">
+    <div class="now-card reveal">
       <div class="icon">&#128188;</div>
       <h3>Working on</h3>
       <p>Soak-test automation and CI/CD frameworks for insulin pump systems</p>
     </div>
-    <div class="now-card">
+    <div class="now-card reveal">
       <div class="icon">&#128101;</div>
       <h3>Collaborating on</h3>
       <p>PLATT Runner orchestration + Power BI telemetry dashboards</p>
     </div>
-    <div class="now-card">
+    <div class="now-card reveal">
       <div class="icon">&#128214;</div>
       <h3>Learning</h3>
       <p>Advanced PySpark, Databricks, and Delta Lake architecture</p>
     </div>
-    <div class="now-card">
+    <div class="now-card reveal">
       <div class="icon">&#128172;</div>
       <h3>Ask me about</h3>
       <p>SDET, Test Automation, CI/CD, Healthcare & Medical Device QA</p>
@@ -299,14 +401,37 @@
   <p class="now-footer">I love exploring new testing tools, contributing test strategy ideas, and keeping a close eye on automation trends.</p>
 </section>
 
+<!-- EDUCATION -->
+<section class="education" id="education">
+  <p class="eyebrow center reveal">BACKGROUND</p>
+  <h2 class="center reveal">Education</h2>
+
+  <div class="education-grid">
+    <div class="education-card reveal">
+      <span class="icon">&#127891;</span>
+      <div>
+        <h3>M.S. in Information Systems and Technology</h3>
+        <p class="role-meta">University of North Texas &middot; 2024</p>
+      </div>
+    </div>
+    <div class="education-card reveal">
+      <span class="icon">&#127891;</span>
+      <div>
+        <h3>B.Tech in Electronics and Communication Engineering</h3>
+        <p class="role-meta">JNTUH &middot; 2019</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="contact" id="contact">
-  <p class="eyebrow center">GET IN TOUCH</p>
-  <h2 class="center">Let's <span class="accent">Connect</span></h2>
-  <p class="section-sub center">Have a role or project in mind? I'd love to hear from you.</p>
+  <p class="eyebrow center reveal">GET IN TOUCH</p>
+  <h2 class="center reveal">Let's <span class="accent">Connect</span></h2>
+  <p class="section-sub center reveal">Have a role or project in mind? I'd love to hear from you.</p>
 
   <div class="contact-grid">
-    <a href="mailto:harshinireddy9298@gmail.com" class="contact-card">
+    <a href="mailto:harshinireddy9298@gmail.com" class="contact-card reveal">
       <div class="icon">&#9993;</div>
       <div>
         <p class="contact-label">EMAIL</p>
@@ -314,7 +439,15 @@
       </div>
       <span class="arrow">&#8599;</span>
     </a>
-    <a href="https://linkedin.com/in/HarshiniReddy" target="_blank" rel="noopener" class="contact-card">
+    <a href="tel:+16128674655" class="contact-card reveal">
+      <div class="icon">&#128222;</div>
+      <div>
+        <p class="contact-label">PHONE</p>
+        <p class="contact-value">(612) 867-4655</p>
+      </div>
+      <span class="arrow">&#8599;</span>
+    </a>
+    <a href="https://linkedin.com/in/HarshiniReddy" target="_blank" rel="noopener" class="contact-card reveal">
       <div class="icon">in</div>
       <div>
         <p class="contact-label">LINKEDIN</p>
@@ -336,6 +469,7 @@
       <a href="#skills">Tech Stack</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="footer-icons">
