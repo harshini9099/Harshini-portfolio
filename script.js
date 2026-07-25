@@ -151,3 +151,26 @@ document.querySelectorAll(".tilt-card").forEach((card) => {
     card.style.transform = "";
   });
 });
+
+// Typewriter animation for the hero job title
+const heroRoleText = document.getElementById("heroRoleText");
+
+if (heroRoleText) {
+  const roleString = "Software Development Engineer in Test (SDET)";
+  let charIndex = 0;
+
+  const typeNextChar = () => {
+    if (charIndex <= roleString.length) {
+      heroRoleText.textContent = roleString.slice(0, charIndex);
+      charIndex++;
+      setTimeout(typeNextChar, 45);
+    }
+  };
+
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReducedMotion) {
+    heroRoleText.textContent = roleString;
+  } else {
+    setTimeout(typeNextChar, 600);
+  }
+}
