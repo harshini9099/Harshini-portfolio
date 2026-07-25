@@ -14,6 +14,8 @@
   <span></span>
 </div>
 
+<canvas id="bgNetwork" class="bg-network" aria-hidden="true"></canvas>
+
 <!-- NAVBAR -->
 <header class="navbar">
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -169,71 +171,81 @@
   </div>
 </section>
 
-<!-- EXPERIENCE -->
+<!-- EXPERIENCE & EDUCATION -->
 <section class="experience" id="experience">
   <p class="eyebrow center reveal">MY JOURNEY</p>
-  <h2 class="center reveal">Work <span class="accent">Experience</span></h2>
+  <h2 class="center reveal">Experience &amp; <span class="accent">Education</span></h2>
   <p class="section-sub center reveal">6+ years building test automation and quality systems across regulated industries</p>
 
-  <div class="timeline">
-    <div class="timeline-item reveal">
-      <span class="tag-pill">Remote / CA</span>
-      <h3>Software Developer Engineer in Test</h3>
-      <p class="role-meta">Tandem Diabetes Care &middot; July 2025 &ndash; Present</p>
-      <ul>
-        <li>Led soak-test automation for insulin pump and mobile systems, designing long-duration workflows executed via optimized GitHub Actions CI/CD pipelines to improve execution reliability and system stability.</li>
-        <li>Architected scalable CI/CD frameworks using reusable composite workflows, dynamic artifact management, parallel execution, and multi-platform (iOS/Android) support.</li>
-        <li>Developed Hardware-in-Loop (HIL) automation for embedded medical pump systems, enabling firmware flashing, telemetry validation, and real-device integration testing.</li>
-        <li>Migrated and architected the Product Log Analysis Testing Tool (PLATT) from Python to PySpark and Spark SQL on Databricks for distributed telemetry processing and large-scale analytics.</li>
-        <li>Designed a Bronze&ndash;Silver&ndash;Gold Delta Lake architecture for structured ingestion, transformation, versioning, and high-performance processing of device telemetry data.</li>
-        <li>Built reusable PySpark notebooks compatible with Databricks and local environments using DuckDB-based simulation to improve debugging and development efficiency.</li>
-        <li>Developed the PLATT Runner orchestration framework for managing CI validation, scheduled execution, cloud/local workflows, and automated pipeline monitoring.</li>
-        <li>Integrated Power BI dashboards with telemetry outputs for real-time visualization, anomaly detection, and data-driven insights for engineering teams.</li>
-        <li>Built end-to-end automation and analytics solutions using Playwright (TypeScript/JavaScript) and GitHub Actions CI quality gates to improve regression coverage and defect triage.</li>
-      </ul>
+  <div class="exp-edu-grid">
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <span class="tag-pill">Remote / CA</span>
+        <h3>Software Developer Engineer in Test</h3>
+        <p class="role-meta">Tandem Diabetes Care &middot; July 2025 &ndash; Present</p>
+        <ul>
+          <li>Led soak-test automation for insulin pump and mobile systems via optimized GitHub Actions CI/CD pipelines.</li>
+          <li>Migrated the Product Log Analysis Testing Tool (PLATT) from Python to PySpark and Spark SQL on Databricks.</li>
+          <li>Designed a Bronze&ndash;Silver&ndash;Gold Delta Lake architecture for device telemetry data.</li>
+          <li>Integrated Power BI dashboards for real-time telemetry visualization and anomaly detection.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item reveal">
+        <span class="tag-pill">Remote / CA</span>
+        <h3>Automation Engineer</h3>
+        <p class="role-meta">Tandem Diabetes Care &middot; March 2025 &ndash; July 2025</p>
+        <ul>
+          <li>Designed a TypeScript + Jasmine + WebdriverIO + Appium automation framework using Page Object Model.</li>
+          <li>Built 300+ reusable automation scripts, cutting manual testing effort by 65% within two release cycles.</li>
+          <li>Integrated automation with AWS Device Farm for parallel real-device execution across 7+ languages.</li>
+          <li>Automated REST Assured API regression for telemetry, firmware, and auth workflows.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item reveal">
+        <span class="tag-pill">Remote / MN</span>
+        <h3>Quality Assurance Automation Engineer</h3>
+        <p class="role-meta">Prime Therapeutics &middot; Aug 2024 &ndash; Feb 2025</p>
+        <ul>
+          <li>Built end-to-end automation frameworks for web, mobile, and React Native using Selenium, Appium, Java, TypeScript.</li>
+          <li>Developed Cucumber BDD frameworks integrating UI, API, and database validation.</li>
+          <li>Ran JMeter/LoadRunner performance testing to identify system bottlenecks.</li>
+          <li>Integrated automation into Jenkins, GitLab CI/CD, and CircleCI while mentoring junior QA engineers.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item reveal">
+        <span class="tag-pill">India</span>
+        <h3>Quality Engineer</h3>
+        <p class="role-meta">Capgemini &middot; June 2018 &ndash; Dec 2022</p>
+        <ul>
+          <li>Built Selenium/Java/REST Assured automation frameworks for enterprise banking applications.</li>
+          <li>Achieved 90% automation coverage across UI, API, and backend testing modules.</li>
+          <li>Integrated automation into Jenkins, Azure DevOps, and GitHub Actions for continuous testing.</li>
+          <li>Conducted cross-browser and cross-platform testing using Selenium Grid and BrowserStack.</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="timeline-item reveal">
-      <span class="tag-pill">Remote / CA</span>
-      <h3>Automation Engineer</h3>
-      <p class="role-meta">Tandem Diabetes Care &middot; March 2025 &ndash; July 2025</p>
-      <ul>
-        <li>Onboarded quickly by participating in Agile sprint ceremonies, aligning test scope with FDA-regulated insulin delivery systems and companion iOS/Android applications.</li>
-        <li>Executed manual testing on physical pumps and mobile apps, validating dosing algorithms, BLE connectivity, alerts, firmware behavior, and multi-build compatibility.</li>
-        <li>Designed a TypeScript + Jasmine + WebdriverIO + Appium automation framework in VS Code using Appium Inspector and Page Object Model.</li>
-        <li>Built 300+ reusable automation scripts covering smoke, regression, and negative scenarios, cutting manual testing effort by 65% within two release cycles.</li>
-        <li>Integrated automation with AWS Device Farm for parallel real-device execution, expanded OS/device coverage, and multi-language UI testing across 7+ languages.</li>
-        <li>Automated REST Assured API regression for telemetry upload, firmware updates, and auth workflows, validating backend log generation via mock proxy to catch missing telemetry events before release.</li>
-        <li>Strengthened delivery quality with Git Flow branching, code reviews, JIRA defect lifecycle management, risk-based test planning, traceability matrices, and FDA 21 CFR 820 documentation &mdash; improving framework performance by 30%.</li>
-      </ul>
-    </div>
-
-    <div class="timeline-item reveal">
-      <span class="tag-pill">Remote / MN</span>
-      <h3>Quality Assurance Automation Engineer</h3>
-      <p class="role-meta">Prime Therapeutics &middot; Aug 2024 &ndash; Feb 2025</p>
-      <ul>
-        <li>Designed and implemented end-to-end automation frameworks for web, mobile, and React Native applications using Selenium, Appium, Java, and TypeScript.</li>
-        <li>Built Cucumber BDD frameworks integrating UI, API (REST Assured), and database validation for full test coverage across application layers.</li>
-        <li>Automated REST API testing covering authentication, request/response validation, and service integration across multiple environments.</li>
-        <li>Performed database validation using PostgreSQL, MongoDB, and Couchbase to ensure data integrity, consistency, and business-rule accuracy.</li>
-        <li>Ran JMeter/LoadRunner performance, load, and stress testing to identify system bottlenecks and improve scalability.</li>
-        <li>Integrated automation suites into Jenkins, GitLab CI/CD, and CircleCI for continuous testing and deployment, while mentoring junior QA engineers.</li>
-      </ul>
-    </div>
-
-    <div class="timeline-item reveal">
-      <span class="tag-pill">India</span>
-      <h3>Quality Engineer</h3>
-      <p class="role-meta">Capgemini &middot; June 2018 &ndash; Dec 2022</p>
-      <ul>
-        <li>Developed automation frameworks using Selenium WebDriver, Java, Python, and REST Assured for enterprise banking applications.</li>
-        <li>Achieved 90% automation coverage across UI, API, and backend testing modules for critical financial systems.</li>
-        <li>Designed and executed functional, regression, integration, smoke, and end-to-end test cases across multiple releases.</li>
-        <li>Performed database validation using PostgreSQL, including stored procedures, triggers, views, and complex SQL queries.</li>
-        <li>Integrated automation suites into Jenkins, Azure DevOps, and GitHub Actions for continuous testing and faster release cycles.</li>
-        <li>Conducted cross-browser and cross-platform testing using Selenium Grid and BrowserStack across cloud testing environments.</li>
-      </ul>
+    <div class="edu-column" id="education">
+      <h3 class="edu-heading">Education</h3>
+      <div class="education-grid">
+        <div class="education-card reveal">
+          <span class="icon">&#127891;</span>
+          <div>
+            <h3>M.S. in Information Systems and Technology</h3>
+            <p class="role-meta">University of North Texas &middot; 2024</p>
+          </div>
+        </div>
+        <div class="education-card reveal">
+          <span class="icon">&#127891;</span>
+          <div>
+            <h3>B.Tech in Electronics and Communication Engineering</h3>
+            <p class="role-meta">JNTUH &middot; 2019</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -408,29 +420,6 @@
   <p class="now-footer">I love exploring new testing tools, contributing test strategy ideas, and keeping a close eye on automation trends.</p>
 </section>
 
-<!-- EDUCATION -->
-<section class="education" id="education">
-  <p class="eyebrow center reveal">BACKGROUND</p>
-  <h2 class="center reveal">Education</h2>
-
-  <div class="education-grid">
-    <div class="education-card reveal">
-      <span class="icon">&#127891;</span>
-      <div>
-        <h3>M.S. in Information Systems and Technology</h3>
-        <p class="role-meta">University of North Texas &middot; 2024</p>
-      </div>
-    </div>
-    <div class="education-card reveal">
-      <span class="icon">&#127891;</span>
-      <div>
-        <h3>B.Tech in Electronics and Communication Engineering</h3>
-        <p class="role-meta">JNTUH &middot; 2019</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <p class="eyebrow center reveal">GET IN TOUCH</p>
@@ -455,7 +444,7 @@
       <span class="arrow">&#8599;</span>
     </a>
     <a href="https://www.linkedin.com/in/harshini-reddy09" target="_blank" rel="noopener" class="contact-card reveal">
-  <div class="icon">in</div>
+      <div class="icon">in</div>
       <div>
         <p class="contact-label">LINKEDIN</p>
         <p class="contact-value">linkedin.com/in/harshini-reddy09</p>

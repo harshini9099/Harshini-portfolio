@@ -152,25 +152,158 @@ document.querySelectorAll(".tilt-card").forEach((card) => {
   });
 });
 
-// Typewriter animation for the hero job title
+// Typewriter animation for the hero job title — loops through multiple titles
 const heroRoleText = document.getElementById("heroRoleText");
 
 if (heroRoleText) {
-  const roleString = "Software Development Engineer in Test (SDET)";
-  let charIndex = 0;
-
-  const typeNextChar = () => {
-    if (charIndex <= roleString.length) {
-      heroRoleText.textContent = roleString.slice(0, charIndex);
-      charIndex++;
-      setTimeout(typeNextChar, 45);
-    }
-  };
+  // Edit this list to add/remove titles that cycle continuously
+  const roleStrings = [
+    "Software Development Engineer in Test (SDET)",
+    "QA Automation Engineer",
+    "Test Automation Architect",
+  ];
 
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
   if (prefersReducedMotion) {
-    heroRoleText.textContent = roleString;
+    heroRoleText.textContent = roleStrings[0];
   } else {
-    setTimeout(typeNextChar, 600);
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    const TYPE_SPEED = 45;
+    const DELETE_SPEED = 25;
+    const HOLD_TIME = 1800;
+    const SWITCH_PAUSE = 400;
+
+    const tick = () => {
+      const currentRole = roleStrings[roleIndex];
+
+      if (!isDeleting) {
+        charIndex++;
+        heroRoleText.textContent = currentRole.slice(0, charIndex);
+
+        if (charIndex === currentRole.length) {
+          isDeleting = true;
+          setTimeout(tick, HOLD_TIME);
+          return;
+        }
+        setTimeout(tick, TYPE_SPEED);
+      } else {
+        charIndex--;
+        heroRoleText.textContent = currentRole.slice(0, charIndex);
+
+        if (charIndex === 0) {
+          isDeleting = false;
+          roleIndex = (roleIndex + 1) % roleStrings.length;
+          setTimeout(tick, SWITCH_PAUSE);
+          return;
+        }
+        setTimeout(tick, DELETE_SPEED);
+      }
+    };
+
+    setTimeout(tick, 600);
+  }
+}
+
+// Ambient particle network background
+const networkCanvas = document.getElementById("bgNetwork");
+
+if (networkCanvas) {
+  const ctx = networkCanvas.getContext("2d");
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const DOT_COLOR = "99, 149, 255";
+  const LINE_COLOR = "99, 149, 255";
+  const MAX_DISTANCE = 140;
+  const DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+  let width = 0;
+  let height = 0;
+  let particles = [];
+  let animationId = null;
+
+  const particleCount = () => {
+    const area = window.innerWidth * window.innerHeight;
+    return Math.max(35, Math.min(90, Math.round(area / 16000)));
+  };
+
+  const createParticles = () => {
+    const count = particleCount();
+    particles = Array.from({ length: count }, () => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      vx: (Math.random() - 0.5) * 0.35,
+      vy: (Math.random() - 0.5) * 0.35,
+      r: Math.random() * 1.6 + 1,
+    }));
+  };
+
+  const resize = () => {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    networkCanvas.width = width * DPR;
+    networkCanvas.height = height * DPR;
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    createParticles();
+  };
+
+  const step = () => {
+    ctx.clearRect(0, 0, width, height);
+
+    for (const p of particles) {
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if (p.x < 0 || p.x > width) p.vx *= -1;
+      if (p.y < 0 || p.y > height) p.vy *= -1;
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${DOT_COLOR}, 0.55)`;
+      ctx.fill();
+    }
+
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < MAX_DISTANCE) {
+          const opacity = (1 - dist / MAX_DISTANCE) * 0.22;
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.strokeStyle = `rgba(${LINE_COLOR}, ${opacity})`;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+      }
+    }
+
+    animationId = requestAnimationFrame(step);
+  };
+
+  resize();
+
+  if (!prefersReducedMotion) {
+    step();
+    window.addEventListener("resize", () => {
+      if (animationId) cancelAnimationFrame(animationId);
+      resize();
+      step();
+    });
+  } else {
+    // Draw a single static frame of dots only, no motion
+    ctx.clearRect(0, 0, width, height);
+    for (const p of particles) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${DOT_COLOR}, 0.4)`;
+      ctx.fill();
+    }
   }
 }
