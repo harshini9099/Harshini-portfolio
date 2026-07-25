@@ -14,7 +14,22 @@
   <span></span>
 </div>
 
-<canvas id="bgNetwork" class="bg-network" aria-hidden="true"></canvas>
+<div class="bg-glyphs" aria-hidden="true">
+  <span style="left:4%; font-size:1.4rem; animation-duration:24s; animation-delay:-2s; color:var(--accent);">&lt;/&gt;</span>
+  <span style="left:13%; font-size:1rem; animation-duration:19s; animation-delay:-9s; color:var(--accent-2);">&#10003;</span>
+  <span style="left:22%; font-size:1.6rem; animation-duration:28s; animation-delay:-14s; color:var(--accent);">{ }</span>
+  <span style="left:31%; font-size:1.1rem; animation-duration:21s; animation-delay:-4s; color:var(--accent-2);">&#9881;</span>
+  <span style="left:40%; font-size:1.2rem; animation-duration:26s; animation-delay:-17s; color:var(--accent);">01</span>
+  <span style="left:49%; font-size:1.3rem; animation-duration:23s; animation-delay:-7s; color:var(--accent-2);">&#9656;</span>
+  <span style="left:58%; font-size:1.5rem; animation-duration:30s; animation-delay:-11s; color:var(--accent);">&lt;/&gt;</span>
+  <span style="left:67%; font-size:1rem; animation-duration:20s; animation-delay:-19s; color:var(--accent-2);">&#10003;</span>
+  <span style="left:75%; font-size:1.2rem; animation-duration:25s; animation-delay:-5s; color:var(--accent);">{ }</span>
+  <span style="left:83%; font-size:1.1rem; animation-duration:22s; animation-delay:-13s; color:var(--accent-2);">&#9881;</span>
+  <span style="left:91%; font-size:1.3rem; animation-duration:27s; animation-delay:-8s; color:var(--accent);">01</span>
+  <span style="left:8%; font-size:1rem; animation-duration:24s; animation-delay:-21s; color:var(--accent-2);">&#9656;</span>
+  <span style="left:63%; font-size:1.4rem; animation-duration:29s; animation-delay:-3s; color:var(--accent);">{ }</span>
+  <span style="left:37%; font-size:1rem; animation-duration:18s; animation-delay:-16s; color:var(--accent-2);">&#10003;</span>
+</div>
 
 <!-- NAVBAR -->
 <header class="navbar">
@@ -177,74 +192,52 @@
   <h2 class="center reveal">Experience &amp; <span class="accent">Education</span></h2>
   <p class="section-sub center reveal">6+ years building test automation and quality systems across regulated industries</p>
 
-  <div class="exp-edu-grid">
-    <div class="timeline">
-      <div class="timeline-item reveal">
-        <span class="tag-pill">Remote / CA</span>
-        <h3>Software Developer Engineer in Test</h3>
-        <p class="role-meta">Tandem Diabetes Care &middot; July 2025 &ndash; Present</p>
-        <ul>
-          <li>Led soak-test automation for insulin pump and mobile systems via optimized GitHub Actions CI/CD pipelines.</li>
-          <li>Migrated the Product Log Analysis Testing Tool (PLATT) from Python to PySpark and Spark SQL on Databricks.</li>
-          <li>Designed a Bronze&ndash;Silver&ndash;Gold Delta Lake architecture for device telemetry data.</li>
-          <li>Integrated Power BI dashboards for real-time telemetry visualization and anomaly detection.</li>
-        </ul>
+  <div class="journey-grid">
+    <div class="journey-col" id="education">
+      <h3 class="journey-heading">Education</h3>
+
+      <div class="entry reveal">
+        <h4 class="entry-title">University of North Texas</h4>
+        <div class="entry-row">
+          <span>M.S. in Information Systems and Technology</span>
+          <span class="entry-date">2024</span>
+        </div>
       </div>
 
-      <div class="timeline-item reveal">
-        <span class="tag-pill">Remote / CA</span>
-        <h3>Automation Engineer</h3>
-        <p class="role-meta">Tandem Diabetes Care &middot; March 2025 &ndash; July 2025</p>
-        <ul>
-          <li>Designed a TypeScript + Jasmine + WebdriverIO + Appium automation framework using Page Object Model.</li>
-          <li>Built 300+ reusable automation scripts, cutting manual testing effort by 65% within two release cycles.</li>
-          <li>Integrated automation with AWS Device Farm for parallel real-device execution across 7+ languages.</li>
-          <li>Automated REST Assured API regression for telemetry, firmware, and auth workflows.</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item reveal">
-        <span class="tag-pill">Remote / MN</span>
-        <h3>Quality Assurance Automation Engineer</h3>
-        <p class="role-meta">Prime Therapeutics &middot; Aug 2024 &ndash; Feb 2025</p>
-        <ul>
-          <li>Built end-to-end automation frameworks for web, mobile, and React Native using Selenium, Appium, Java, TypeScript.</li>
-          <li>Developed Cucumber BDD frameworks integrating UI, API, and database validation.</li>
-          <li>Ran JMeter/LoadRunner performance testing to identify system bottlenecks.</li>
-          <li>Integrated automation into Jenkins, GitLab CI/CD, and CircleCI while mentoring junior QA engineers.</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item reveal">
-        <span class="tag-pill">India</span>
-        <h3>Quality Engineer</h3>
-        <p class="role-meta">Capgemini &middot; June 2018 &ndash; Dec 2022</p>
-        <ul>
-          <li>Built Selenium/Java/REST Assured automation frameworks for enterprise banking applications.</li>
-          <li>Achieved 90% automation coverage across UI, API, and backend testing modules.</li>
-          <li>Integrated automation into Jenkins, Azure DevOps, and GitHub Actions for continuous testing.</li>
-          <li>Conducted cross-browser and cross-platform testing using Selenium Grid and BrowserStack.</li>
-        </ul>
+      <div class="entry reveal">
+        <h4 class="entry-title">JNTUH</h4>
+        <div class="entry-row">
+          <span>B.Tech, Electronics &amp; Communication Engineering</span>
+          <span class="entry-date">2019</span>
+        </div>
       </div>
     </div>
 
-    <div class="edu-column" id="education">
-      <h3 class="edu-heading">Education</h3>
-      <div class="education-grid">
-        <div class="education-card reveal">
-          <span class="icon">&#127891;</span>
-          <div>
-            <h3>M.S. in Information Systems and Technology</h3>
-            <p class="role-meta">University of North Texas &middot; 2024</p>
-          </div>
-        </div>
-        <div class="education-card reveal">
-          <span class="icon">&#127891;</span>
-          <div>
-            <h3>B.Tech in Electronics and Communication Engineering</h3>
-            <p class="role-meta">JNTUH &middot; 2019</p>
-          </div>
-        </div>
+    <div class="journey-col">
+      <h3 class="journey-heading">Work Experience</h3>
+
+      <div class="entry reveal">
+        <h4 class="entry-title">Tandem Diabetes Care &mdash; SDET</h4>
+        <p class="entry-date">July 2025 &ndash; Present</p>
+        <p class="entry-desc">Leading soak-test automation for insulin pump and mobile systems via GitHub Actions CI/CD, and migrating the PLATT telemetry tool from Python to PySpark and Databricks with a Bronze&ndash;Silver&ndash;Gold Delta Lake architecture and Power BI dashboards.</p>
+      </div>
+
+      <div class="entry reveal">
+        <h4 class="entry-title">Tandem Diabetes Care &mdash; Automation Engineer</h4>
+        <p class="entry-date">March 2025 &ndash; July 2025</p>
+        <p class="entry-desc">Designed a TypeScript + Jasmine + WebdriverIO + Appium framework and built 300+ reusable scripts, cutting manual testing effort by 65%. Integrated automation with AWS Device Farm for parallel real-device execution across 7+ languages.</p>
+      </div>
+
+      <div class="entry reveal">
+        <h4 class="entry-title">Prime Therapeutics &mdash; QA Automation Engineer</h4>
+        <p class="entry-date">Aug 2024 &ndash; Feb 2025</p>
+        <p class="entry-desc">Built end-to-end automation frameworks for web, mobile, and React Native apps using Selenium, Appium, and Cucumber BDD, and ran JMeter/LoadRunner performance testing while mentoring junior QA engineers.</p>
+      </div>
+
+      <div class="entry reveal">
+        <h4 class="entry-title">Capgemini &mdash; Quality Engineer</h4>
+        <p class="entry-date">June 2018 &ndash; Dec 2022</p>
+        <p class="entry-desc">Built Selenium/Java/REST Assured automation frameworks for enterprise banking applications, achieving 90% automation coverage across UI, API, and backend modules integrated into Jenkins and Azure DevOps.</p>
       </div>
     </div>
   </div>
